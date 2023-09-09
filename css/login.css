@@ -8,6 +8,7 @@ html{
     background-color: rgb(242, 244, 243);  
     font-family: 'Noto Serif', serif;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 body{
@@ -81,6 +82,104 @@ body{
     height: 90%;
 }
 
+.contenido{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.container_login{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr ;
+    gap: 10px;
+}
+
+.img_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.img_login img{
+    width: 100%;
+    height: 100%;
+}
+
+.iniciar_sesion{
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.2fr 0.3fr;
+    padding: 20px;
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.form_login label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form_login input{
+    width: 320px;
+    height: 35px;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_login{
+    width: 25%;
+    height: 10%;
+    border-radius: 7px;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+.btn_register{
+    width: 35%;
+    height: 50%;
+}
+
+.registrarse{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_register{
+    border: none;
+    background: none;
+}
 /* #icon_hyper{
     width: 50px;
     height: 50px;
