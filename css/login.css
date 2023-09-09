@@ -1,0 +1,93 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(242, 244, 243);  
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+}
+
+body{
+    margin: 10px 15px;
+}
+
+.encabezado{
+    position: relative;
+    display: grid;
+    height: 85px;
+    grid-template-columns: 180px 540px 540px 221px;
+    border: 1px solid black;
+}
+
+.logo_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_encabezado img{
+    width: 90%;
+    height: 85%;
+}
+
+.btns_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_header{
+    width: 90px;
+    height: 38px;
+}
+
+.buscador_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_search{
+    width: 80%;
+    height: 38px;
+    border-radius: 15px;
+}
+
+.usuario_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons_user_1, .icons_user_2{
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.icons_user_1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.icons_user_2 img{
+    width: 90%;
+    height: 90%;
+}
+
+/* #icon_hyper{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#icons img{
+    width: 100%;
+    height: 100%;
+} */
