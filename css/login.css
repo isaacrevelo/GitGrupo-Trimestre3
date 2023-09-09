@@ -5,7 +5,7 @@
 }
 
 html{
-    background-color: rgb(242, 244, 243);  
+    background-color: whitesmoke;  
     font-family: 'Noto Serif', serif;
     font-weight: 300;
     overflow-x: hidden;
@@ -180,13 +180,47 @@ body{
     border: none;
     background: none;
 }
-/* #icon_hyper{
-    width: 50px;
-    height: 50px;
+
+.pie_pagina{
+    display: grid;
+    width: 100%;
+    height: 110px;
+    grid-template-columns: 0.8fr 1fr 0.6fr;
     border: 1px solid black;
 }
+.p_footer{
+    padding: 10px;
+}
 
-#icons img{
+.btns_footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_footer{
+    width: 42px;
+    height: 42px;
+}
+
+.btn_footer img{
     width: 100%;
     height: 100%;
-} */
+}
+
+.add_footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    padding: 10px;
+}
+
+.add_footer picture{
+    width: 35px;
+    height: 35px;
+}
+
+.add_footer picture img{
+    width: 100%;
+    height: 100%;
+}
