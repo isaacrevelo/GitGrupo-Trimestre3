@@ -16,12 +16,15 @@ body{
 }
 
 .encabezado{
-    position: relative;
+    position:sticky;
+    top:0;
     display: grid;
     height: 85px;
     grid-template-columns: 180px 540px 540px 221px;
     border: 1px solid black;
 }
+
+
 
 .logo_encabezado{
     display: flex;
@@ -82,103 +85,44 @@ body{
     height: 90%;
 }
 
-.contenido{
-    position: relative;
+.empresa {
     display: flex;
-    justify-content: center;
+    width: 800px;
+    height: 200px;
     align-items: center;
-    width: 100%;
-    height: 700px;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 7px;
 }
 
-.container_login{
-    width: 80%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr ;
-    gap: 10px;
+.empresa img {
+    width: 200px;
+    height: 150px;
 }
 
-.img_login{
+.lista_cargos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
+    flex-direction: row;
+    justify-content:center;
 }
 
-.img_login img{
-    width: 100%;
-    height: 100%;
-}
-
-.iniciar_sesion{
-    display: grid;
-    grid-template-rows: 0.3fr 1fr 0.2fr 0.3fr;
-    padding: 20px;
-}
-
-.form_login{
+.cargo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 25px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 7px;
 }
 
-.form_login label{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+
+.cargo h2 {
+    align-self: baseline;
 }
 
-.form_login input{
-    width: 320px;
-    height: 35px;
-}
-
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn_login{
-    width: 25%;
-    height: 10%;
-    border-radius: 7px;
-}
-
-.separator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 15px;
-}
-
-.separator hr {
-    flex-grow: 1;
-    border-top: 1px solid #ccc;
-}
-
-.separator span {
-    color: #8b8b8b;
-}
-
-.btn_register{
-    width: 35%;
-    height: 50%;
-}
-
-.registrarse{
-    display: flex;
-    justify-content: center;
-}
-
-.btn_register{
-    border: none;
-    background: none;
+.cargo button {
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .pie_pagina{
