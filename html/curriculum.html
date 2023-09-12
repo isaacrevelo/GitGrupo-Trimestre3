@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/curriculum.css">
+</head>
+<body>
+    <header class="encabezado">
+        <section class="logo_encabezado">
+            <img src="../img/login/example_logo.png"/>
+        </section>
+
+        <section class="btns_encabezado">
+            <button class="btn_header">
+                <a href="login.html" target="">Home</a>
+            </button>
+            <button class="btn_header">
+                <a href="" target="">Empresas</a>
+            </button>
+            <button class="btn_header">
+                <a href="" target="">Vacantes</a>
+            </button>
+            <button class="btn_header">
+                <a href="" target="">About ToU</a>
+            </button>
+        </section>
+
+        <section class="buscador_encabezado">
+            <input class="input_search" type="search" placeholder="Buscar(cargo, ubicacion, empresa...)"/>
+        </section>
+
+        <section class="usuario_encabezado">
+            <picture class="icons_user_1">
+                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+            </picture>
+            <picture class="icons_user_2">
+                <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
+            </picture>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <article class="tab_curriculum">
+                <button>Datos Personales</button>
+                <button>Estudios</button>
+                <button>Experiencia</button>
+                <button>Idiomas</button>
+            </article>
+            <article>
+                <div class="content">
+                   <form>
+                        <label for="nombres">
+                            <span>Nombres</span>
+                            <input id="nombres" type="text" name="nombres"/>
+                        </label>
+                        <label for="apellidos">
+                            <span>Apellidos</span>
+                            <input id="apellidos" type="text" name="apellidos"/>
+                        </label>
+                        <label for="correo">
+                            <span>Correo</span>
+                            <input id="correo" type="email" name="correo"/>
+                        </label>
+                        <label for="telefono">
+                            <span>Telefono</span>
+                            <input id="telefono" type="text" name="telefono"/>
+                        </label>
+                        <label>
+                            <span>Ubicacion</span>
+                            <select name="departamento">
+                                <option>Bogota D.C</option>
+                                <option>Valle del Cauca</option>
+                            </select>
+                            <select name="ciudad">
+                                <option>Bogota D.C</option>
+                                <option>Cali</option>
+                            </select>
+                        </label>
+                        <label for="direccion">
+                            <span>Direccion Residencia</span>
+                            <input id="direccion" type="text" name="direccion"/>
+                        </label>
+                        <label>
+                            <span>Tipo de Sangre</span>
+                            <select>
+                                <option>AB+</option>
+                                <option>O+</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Genero</span>
+                            <select>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Tipo Documento</span>
+                            <select>
+                                <option>Cedula de Ciudadania</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label for="nro_documento">
+                            <span>Numero Documento</span>
+                            <input id="nro_documento" type="text" name="nro_documento"/>
+                        </label>
+                        <label for="fecha_expidicion_documento">
+                            <span>Fecha Expedicion</span>
+                            <input id="fecha_expidicion_documento" type="date" name="fecha_expidicion_documento" >
+                        </label>
+                        <label for="fecha_nacimiento">
+                            <span>Fecha Nacimiento</span>
+                            <input id="fecha_nacimiento" type="date" name="fecha_nacimiento" >
+                        </label>
+                        <div>
+                            <span>Estado Civil</span>
+                            <select>
+                                <option>Soltero</option>
+                                <option>..</option>
+                            </select>
+                        </div>
+                        <label>
+                            <span>Libreta Militar</span>
+                            <select>
+                                <option>Libreta de Primera</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Estrato</span>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </label>
+                   </form> 
+                </div>
+
+                <div class="content">
+                   <form>
+                        <label for="baciller">
+                            <span>Bachiller</span>
+                            <input id="bachiller" type="file" name="bachiller">
+                        </label>
+                        <label for="tecnologia">
+                            <span>Tecnologia</span>
+                            <input id="tecnologia" type="file" name="tecnologia">
+                        </label>
+                        <label for="titulo_profesional">
+                            <span>Titulo Profesional</span>
+                            <input id="titulo_profesional" type="file" name="titulo_profesional">
+                        </label>
+                        <label for="maestria">
+                            <span>Maestria</span>
+                            <input id="maestria" type="file" name="maestria">
+                        </label>
+                   </form> 
+                </div>
+
+                <div class="content">
+                    <hr><span>Trabajo</span><hr>
+                    <select>
+                        <option>Trabajo Formal</option>
+                        <option>Trabajo Informal</option>
+                    </select>
+                   <form>
+                        <label for="nombre_empresa">
+                            <span>Nombre Empresa</span>
+                            <input id="nombre_empresa" type="text" name="nombre_empresa">
+                        </label>
+                        <label for="fecha_inicio">
+                            <span>Fecha inicio</span>
+                            <input id="fecha_inicio" type="date" name="fecha_inicio">
+                        </label>
+                        <label for="fecha_fin">
+                            <span>Fecha Fin</span>
+                            <input id="fecha_fin" type="date" name="fecha_fin">
+                        </label>
+                        <label for="certificado">
+                            <span>Certificado</span>
+                            <input id="certificado" type="file" name="certificado">
+                        </label>
+                   </form> 
+                </div>
+
+                <div class="content">
+                    <hr><span>Idiomas Aquiridos</span><hr>
+                   <form>
+                        <label>
+                            <span>Agregar Idioma</span>
+                            <select>
+                                <option>Ingles</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Nivel Idioma</span>
+                            <select>
+                                <option>A1</option>
+                                <option>A2</option>
+                                <option>B1</option>
+                                <option>B1</option>
+                            </select>
+                        </label>
+                        <label for="certificado_idioma">
+                            <span>Certificado</span>
+                            <input id="certificado_idioma" type="file" name="certificado_idioma">
+                        </label>
+                   </form> 
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="pie_pagina">
+        <section class="p_footer">
+            <p>aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo
+            </p>
+        </section>
+        <section class="btns_footer">
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_facebook_circular.png" alt="facebook"/></a>
+            </picture>
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_whatsapp.png" alt="whatsapp"/></a>
+            </picture>
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_social.png" alt="social"/></a>
+            </picture>
+        </section>
+        <section class="add_footer">
+            <picture>
+                <a href="" target=""><img src="../img/login/icon_help.png" alt="ayuda"/></a>
+            </picture>
+        </section>
+    </footer>
+</body>
+</html>

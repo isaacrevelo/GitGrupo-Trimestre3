@@ -1,0 +1,226 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: whitesmoke;  
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 10px 15px;
+}
+
+.encabezado{
+    position: relative;
+    display: grid;
+    height: 85px;
+    grid-template-columns: 180px 540px 540px 221px;
+    border: 1px solid black;
+}
+
+.logo_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_encabezado img{
+    width: 90%;
+    height: 85%;
+}
+
+.btns_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_header{
+    width: 90px;
+    height: 38px;
+}
+
+.buscador_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_search{
+    width: 80%;
+    height: 38px;
+    border-radius: 15px;
+}
+
+.usuario_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons_user_1, .icons_user_2{
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.icons_user_1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.icons_user_2 img{
+    width: 90%;
+    height: 90%;
+}
+
+.contenido{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.container_login{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr ;
+    gap: 10px;
+}
+
+.img_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.img_login img{
+    width: 100%;
+    height: 100%;
+}
+
+.iniciar_sesion{
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.2fr 0.3fr;
+    padding: 20px;
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.form_login label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form_login input{
+    width: 320px;
+    height: 35px;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_login{
+    width: 25%;
+    height: 10%;
+    border-radius: 7px;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+.btn_register{
+    width: 35%;
+    height: 50%;
+}
+
+.registrarse{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_register{
+    border: none;
+    background: none;
+}
+
+.pie_pagina{
+    display: grid;
+    width: 100%;
+    height: 110px;
+    grid-template-columns: 0.8fr 1fr 0.6fr;
+    border: 1px solid black;
+}
+.p_footer{
+    padding: 10px;
+}
+
+.btns_footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_footer{
+    width: 42px;
+    height: 42px;
+}
+
+.btn_footer img{
+    width: 100%;
+    height: 100%;
+}
+
+.add_footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    padding: 10px;
+}
+
+.add_footer picture{
+    width: 35px;
+    height: 35px;
+}
+
+.add_footer picture img{
+    width: 100%;
+    height: 100%;
+}
