@@ -1,0 +1,74 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: whitesmoke;  
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.contenido{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    padding: 0% 1%;
+}
+
+.container{
+    width: 95%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr ;
+}
+
+.tab_curriculum{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form1 label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 8%;
+}
+
+.labels input, select{
+    width: 70%;
+    height: 60%;
+}
+
+/* .labels_select select{
+    display: flex;
+    justify-content: center;
+} */
+
+.labels_select select{
+    width: 20%;
+    height: 60%;
+}
