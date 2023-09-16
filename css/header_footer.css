@@ -1,11 +1,11 @@
-
 .encabezado{
     position: relative;
     display: grid;
     height: 85px;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    border: 1px solid black;
     padding: 0% 1%;
+    background-color: #9ca5db;
+    box-shadow: 0 5px 15px #bbc1e5;
 }
 
 .logo_encabezado{
@@ -29,6 +29,31 @@
 .btn_header{
     width: 90px;
     height: 38px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.7s ease;
+}
+
+.btn_header a{
+    text-decoration: none;
+    transition: color 0.7s ease;
+}
+
+.btn_header a:link{
+    color: #a3354eff;
+}
+
+.btn_header a:visited{
+    color: #a3354eff;
+}
+
+.btn_header a:hover, button:hover{
+    background-color: #f1efef;
+    color: black;
+    /* color: rgb(45, 58, 119); */
+}
+.btn_header a:active{
+    color: rgb(255, 113, 146);
 }
 
 .buscador_encabezado{
@@ -56,6 +81,7 @@
     align-items: center;
     width: 44px;
     height: 44px;
+    cursor: pointer;
 }
 
 .icons_user_1 img{
@@ -74,8 +100,9 @@
     width: 100%;
     height: 110px;
     grid-template-columns: 0.8fr 1fr 0.6fr;
-    border: 1px solid black;
     padding: 0% 1%;
+    background-color: #676378;
+    box-shadow: 5px 0 15px #676378;
 }
 .p_footer{
     padding: 10px;
