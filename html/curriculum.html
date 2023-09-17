@@ -10,7 +10,8 @@
 <body>
     <header class="encabezado">
         <section class="logo_encabezado">
-            <img src="../img/login/example_logo.png"/>
+            <span>User Select</span>
+            <!-- <img src="../img/login/example_logo.png"/> -->
         </section>
 
         <section class="btns_encabezado">
@@ -46,13 +47,13 @@
     <main class="contenido">
         <section class="container">
             <article class="tab_curriculum">
-                <button>Datos Personales</button>
-                <button>Estudios</button>
-                <button>Experiencia</button>
-                <button>Idiomas</button>
+                <button id="btn1" onclick="openDatos()" class="btn_tab btn_tab_1">Datos Personales</button>
+                <button id="btn2" onclick="openEstudios()" class="btn_tab">Estudios</button>
+                <button id="btn3" onclick="openExperiencia()" class="btn_tab">Experiencia</button>
+                <button id="btn4" onclick="openIdiomas()" class="btn_tab btn_tab_4">Idiomas</button>
             </article>
-            <article>
-                <div class="content content1">
+            <article class="container_general">
+                <div id="content1" class="content content_1">
                    <form class="form1">
                         <label class="labels" for="nombres">
                             <span>Nombres</span>
@@ -70,16 +71,18 @@
                             <span>Telefono</span>
                             <input id="telefono" type="text" name="telefono"/>
                         </label>
-                        <label class="labels_select">
+                        <label class="label_select">
                             <span>Ubicacion</span>
-                            <select name="departamento">
-                                <option>Bogota D.C</option>
-                                <option>Valle del Cauca</option>
-                            </select>
-                            <select name="ciudad">
-                                <option>Bogota D.C</option>
-                                <option>Cali</option>
-                            </select>
+                            <div>
+                                <select name="departamento">
+                                    <option>Bogota D.C</option>
+                                    <option>Valle del Cauca</option>
+                                </select>
+                                <select name="ciudad">
+                                    <option>Bogota D.C</option>
+                                    <option>Cali</option>
+                                </select>
+                            </div>                            
                         </label>
                         <label class="labels" for="direccion">
                             <span>Direccion Residencia</span>
@@ -145,7 +148,7 @@
                    </form> 
                 </div>
 
-                <div class="content content2">
+                <div id="content2" class="content content_2">
                    <form>
                         <label for="baciller">
                             <span>Bachiller</span>
@@ -166,7 +169,7 @@
                    </form> 
                 </div>
 
-                <div class="content content3">
+                <div id="content3" class="content content_3">
                     <hr><span>Trabajo</span><hr>
                     <select>
                         <option>Trabajo Formal</option>
@@ -192,7 +195,7 @@
                    </form> 
                 </div>
 
-                <div class="content content4">
+                <div id="content4" class="content content_4">
                     <hr><span>Idiomas Aquiridos</span><hr>
                    <form>
                         <label>
@@ -219,6 +222,41 @@
             </article>
         </section>
     </main>
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+
+            function openDatos(){
+                content1.style.transform = "translateX(0)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(100%)";
+                content4.style.transform = "translateX(100%)";
+            }
+            function openEstudios(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(0)";
+                content3.style.transform = "translateX(100%)";
+                content4.style.transform = "translateX(100%)";
+            }
+            function openExperiencia(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(0)";
+                content4.style.transform = "translateX(100%)";
+            }
+            function openIdiomas(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(100%)";
+                content4.style.transform = "translateX(0)";
+            }
+    </script>
 
     <footer class="pie_pagina">
         <section class="p_footer">

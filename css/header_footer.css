@@ -98,6 +98,13 @@ html{
     gap: 15px;
 }
 
+.nav_usuario ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
 .icons_user_1, .icons_user_2{
     display: flex;
     align-items: center;

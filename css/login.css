@@ -55,9 +55,10 @@
     gap: 20px;
 }
 
-.form_login input{
+.form_login label input{
     width: 320px;
     height: 35px;
+    padding: 3%;
 }
 
 .name{
