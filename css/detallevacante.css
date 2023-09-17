@@ -15,79 +15,9 @@ body{
     margin: 10px 15px;
 }
 
-.encabezado{
-    position:sticky;
-    top:0;
-    display: grid;
-    height: 85px;
-    grid-template-columns: 180px 540px 540px 221px;
-    border: 1px solid black;
-}
-
-
-
-.logo_encabezado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo_encabezado img{
-    width: 90%;
-    height: 85%;
-}
-
-.btns_encabezado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.btn_header{
-    width: 90px;
-    height: 38px;
-}
-
-.buscador_encabezado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.input_search{
-    width: 80%;
-    height: 38px;
-    border-radius: 15px;
-}
-
-.usuario_encabezado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.icons_user_1, .icons_user_2{
-    display: flex;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-}
-
-.icons_user_1 img{
-    width: 100%;
-    height: 100%;
-}
-
-.icons_user_2 img{
-    width: 90%;
-    height: 90%;
-}
-
 .empresa {
     display: flex;
-    width: 800px;
+    max-width: 800px;
     height: 200px;
     align-items: center;
     border: 1px solid gray;
@@ -96,23 +26,24 @@ body{
 }
 
 .empresa img {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 .lista_cargos {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content:center;
+    gap: 10px;
 }
 
 .cargo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    max-width: 400px;
     border: 1px solid gray;
     padding: 10px;
-    margin: 7px;
+    margin: 10px;
 }
 
 
@@ -125,46 +56,11 @@ body{
     margin-top: 10px;
 }
 
-.pie_pagina{
-    display: grid;
-    width: 100%;
-    height: 110px;
-    grid-template-columns: 0.8fr 1fr 0.6fr;
-    border: 1px solid black;
-}
-.p_footer{
-    padding: 10px;
-}
-
-.btns_footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.btn_footer{
-    width: 42px;
-    height: 42px;
-}
-
-.btn_footer img{
-    width: 100%;
-    height: 100%;
-}
-
-.add_footer{
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
-    padding: 10px;
-}
-
-.add_footer picture{
-    width: 35px;
-    height: 35px;
-}
-
-.add_footer picture img{
-    width: 100%;
-    height: 100%;
+@media screen and (max-width:750px) {
+    .empresa {
+        margin: 20px;
+    }
+    .cargo {
+        max-width: 100%;
+    }
 }
