@@ -53,8 +53,8 @@
                 <button id="btn4" onclick="openIdiomas()" class="btn_tab btn_tab_4">Idiomas</button>
             </article>
             <article class="container_general">
-                <div id="content1" class="content content_1">
-                   <form class="form1">
+                <div id="contenido1" class="content content_1">
+                   <form class="formulario form1">
                         <label class="labels" for="nombres">
                             <span>Nombres</span>
                             <input id="nombres" type="text" name="nombres"/>
@@ -103,7 +103,7 @@
                             </select>
                         </label>
                     </form>
-                    <form class="form1">
+                    <form class="formulario form2">
                         <label>
                             <span>Tipo Documento</span>
                             <select>
@@ -148,7 +148,7 @@
                    </form> 
                 </div>
 
-                <div id="content2" class="content content_2">
+                <div id="contenido2" class="content content_2">
                    <form>
                         <label for="baciller">
                             <span>Bachiller</span>
@@ -169,7 +169,7 @@
                    </form> 
                 </div>
 
-                <div id="content3" class="content content_3">
+                <div id="contenido3" class="content content_3">
                     <hr><span>Trabajo</span><hr>
                     <select>
                         <option>Trabajo Formal</option>
@@ -195,7 +195,7 @@
                    </form> 
                 </div>
 
-                <div id="content4" class="content content_4">
+                <div id="contenido4" class="content content_4">
                     <hr><span>Idiomas Aquiridos</span><hr>
                    <form>
                         <label>
@@ -223,42 +223,43 @@
         </section>
     </main>
     <script>
-        var content1 = document.getElementById("content1");
-        var content2 = document.getElementById("content2");
-        var content3 = document.getElementById("content3");
-        var content4 = document.getElementById("content4");
+        var contenido1 = document.getElementById("contenido1");
+        var contenido2 = document.getElementById("contenido2");
+        var contenido3 = document.getElementById("contenido3");
+        var contenido4 = document.getElementById("contenido4");
         var btn1 = document.getElementById("btn1");
         var btn2 = document.getElementById("btn2");
         var btn3 = document.getElementById("btn3");
         var btn4 = document.getElementById("btn4");
 
             function openDatos(){
-                content1.style.transform = "translateX(0)";
-                content2.style.transform = "translateX(100%)";
-                content3.style.transform = "translateX(100%)";
-                content4.style.transform = "translateX(100%)";
+                contenido1.style.transform = "translateX(0)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
             }
+            
             function openEstudios(){
-                content1.style.transform = "translateX(100%)";
-                content2.style.transform = "translateX(0)";
-                content3.style.transform = "translateX(100%)";
-                content4.style.transform = "translateX(100%)";
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(0)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
             }
             function openExperiencia(){
-                content1.style.transform = "translateX(100%)";
-                content2.style.transform = "translateX(100%)";
-                content3.style.transform = "translateX(0)";
-                content4.style.transform = "translateX(100%)";
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(0)";
+                contenido4.style.transform = "translateX(100%)";
             }
             function openIdiomas(){
-                content1.style.transform = "translateX(100%)";
-                content2.style.transform = "translateX(100%)";
-                content3.style.transform = "translateX(100%)";
-                content4.style.transform = "translateX(0)";
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(0)";
             }
     </script>
 
-    <footer class="pie_pagina">
+    <footer class="pie_pagina"> 
         <section class="p_footer">
             <p>aqui va un parrafo aqui va un parrafo
                 aqui va un parrafo aqui va un parrafo
