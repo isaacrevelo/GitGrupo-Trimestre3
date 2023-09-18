@@ -1,5 +1,8 @@
 .contenido{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 1050px;
     padding: 1% 1%;
@@ -10,7 +13,7 @@
     flex-direction: column;
     width: 95%;
     height: 90%;
-    gap: 15px;
+    gap: 1%;
 }
 
 /*  */
@@ -19,11 +22,11 @@
     align-items:flex-end;   
     width: 470px;
     height: 40px;
-    background-color: whitesmoke;
+    background-color: white;
     border: 1px solid grey;
     border-radius: 7px 90px 0 0;
     padding: 0 5px;
-    position: relative;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
 }   
 
 
@@ -35,7 +38,7 @@
     transform: skew(20deg, 0deg);
     color: #000000;
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .btn_tab_1{
@@ -67,35 +70,40 @@
 .container_general{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    justify-content:flex-start;
     align-items: center;
-    gap: 5%;
+    overflow: hidden;
 }
 
 .content{
     position: absolute;
-    width: 1300px;
-    height: 900px;
-    background-color: whitesmoke;
-    border: 1px solid grey;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(184, 184, 184, 0.5);
+}   
+    
+#contenido1{
+    transform: translateX(0%);
+}
+
+#contenido2 #contenido3 #contenido4{
+    transform: translateX(100%);
 }
 
 .content_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2%;
-}
-
-#content1{
-    transform: translateX(0px);
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 4% 5%;
 }
 
 .form1{
@@ -116,7 +124,7 @@
 }
 
 .labels input, select{
-    width: 70%;
+    width: 90%;
     height: 60%;
     padding: 1.5%;
 }
@@ -129,15 +137,8 @@
     gap: 2%;
 }
 .label_select  div select{
-    width: 34%;
+    width: 44%;
     height: 100%;
 }
 
-#contenido1{
-    visibility: visible;
-    transform: translateX(0);
-}
 
-#contenido2,#content3,#content4{
-    transform: translateX(100%);
-}
