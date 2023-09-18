@@ -77,6 +77,11 @@
     overflow: hidden;
 }
 
+.container_general span{
+    font-size: 20.5px;
+    font-weight: 600;
+}
+
 .content{
     position: absolute;
     width: 100%;
@@ -94,16 +99,54 @@
     transform: translateX(100%);
 }
 
+.contenido input{
+    padding: 20px 19px ;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contenido input:focus{
+    border: 3px solid #555;
+}
+
+.contenido input[type="file"]{
+    padding: 8px 4px;
+    width: 40%;
+    border-radius: 9px;
+}
+
+.contenido input[type="file"]::file-selector-button:hover {
+    background-color: #ced1f57c;  
+}
+
+.contenido input::file-selector-button {
+    font-weight: bold;
+    color: rgb(135, 163, 219);
+    background-color: whitesmoke;
+    padding: 0.5em;
+    border: thin solid #bbb5b5;
+    border-radius: 3px;
+}
+
+.contenido select{
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    padding: 10px 14px;
+}
+
 .content_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 3% 4%;
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 4% 5%;
+    justify-content: space-between
 }
 
 .form1{
@@ -120,13 +163,12 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    height: 8%;
+    height: 9%; 
 }
 
 .labels input, select{
     width: 90%;
     height: 60%;
-    padding: 1.5%;
 }
 
 .label_select div{
@@ -136,9 +178,110 @@
     height: 60%;
     gap: 2%;
 }
+
 .label_select  div select{
     width: 44%;
     height: 100%;
 }
 
+.content_2{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
 
+.form3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 3% 4%;
+    gap: 80px;
+}
+
+.form3 label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 78%;
+    height: 8%;
+}
+
+.form3 input[type="file"]{
+    width: 70%;
+}
+.content_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3% 4%;
+    gap: 40px;
+}
+
+.content_3 article{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    gap: 5%;
+}
+
+.content_3 article select{
+    width: 15%;
+}
+
+.content_3 article hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.form4{
+    display: grid;
+    height: 30%;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.form4 label{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 9px;
+}
+
+.form4 input{
+    height: 15%;
+}
+
+.form4 input[type="file"]{
+    width: 100%;
+    height: 85%;
+}
+
+.content_4{
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 4%;
+}
+
+.form5{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    gap: 25px;
+}
+
+.form5 label{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form5 select{
+    width: 40%;
+}
+
+.form5 input[type="file"]{
+    width: 75%;
+}

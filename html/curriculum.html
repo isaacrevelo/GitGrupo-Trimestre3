@@ -69,7 +69,7 @@
                         </label>
                         <label class="labels" for="telefono">
                             <span>Telefono</span>
-                            <input id="telefono" type="text" name="telefono"/>
+                            <input id="telefono" type="tel" name="telefono"/>
                         </label>
                         <label class="label_select">
                             <span>Ubicacion</span>
@@ -149,7 +149,7 @@
                 </div>
 
                 <div id="contenido2" class="content content_2">
-                   <form>
+                   <form class="form3">
                         <label for="baciller">
                             <span>Bachiller</span>
                             <input id="bachiller" type="file" name="bachiller">
@@ -170,12 +170,14 @@
                 </div>
 
                 <div id="contenido3" class="content content_3">
-                    <hr><span>Trabajo</span><hr>
-                    <select>
-                        <option>Trabajo Formal</option>
-                        <option>Trabajo Informal</option>
-                    </select>
-                   <form>
+                    <article>
+                        <hr>
+                        <select>
+                            <option>Trabajo Formal</option>
+                            <option>Trabajo Informal</option>
+                        </select>
+                    </article>
+                   <form class="form4">
                         <label for="nombre_empresa">
                             <span>Nombre Empresa</span>
                             <input id="nombre_empresa" type="text" name="nombre_empresa">
@@ -188,6 +190,10 @@
                             <span>Fecha Fin</span>
                             <input id="fecha_fin" type="date" name="fecha_fin">
                         </label>
+                        <label for="telefono_empresa">
+                            <span>Telefono Empresa</span>
+                            <input id="telefono_empresa" type="tel" name="telefono_empresa">
+                        </label>
                         <label for="certificado">
                             <span>Certificado</span>
                             <input id="certificado" type="file" name="certificado">
@@ -196,8 +202,7 @@
                 </div>
 
                 <div id="contenido4" class="content content_4">
-                    <hr><span>Idiomas Aquiridos</span><hr>
-                   <form>
+                   <form class="form5">
                         <label>
                             <span>Agregar Idioma</span>
                             <select>
