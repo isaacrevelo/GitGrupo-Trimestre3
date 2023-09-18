@@ -41,40 +41,56 @@ html{
     height: 85%;
 }
 
-.btns_encabezado{
+.navbar_encabezado{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
 }
 
-.btn_header{
-    width: 90px;
-    height: 38px;
-    cursor: pointer;
-    background-color: white;
-    transition: background-color 0.7s ease;
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 50%;
 }
 
-.btn_header a{
+.nav_links li{
+    list-style-type: none;
+}
+
+.nav_links a{
     text-decoration: none;
     transition: color 0.7s ease;
 }
 
-.btn_header a:link{
+.links{
+    display: flex;
+    justify-content: center;
+    width: 22%;
+    transition: background-color 0.7s ease;
+    cursor: pointer;
+}
+
+.links a:link{
     color: #a3354eff;
 }
 
-.btn_header a:visited{
+.links a:visited{
     color: #a3354eff;
 }
 
-.btn_header a:hover, button:hover{
+.links a:hover{
+    padding: 5%;
     background-color: #f1efef;
     color: black;
     /* color: rgb(45, 58, 119); */
 }
-.btn_header a:active{
+.links a:active{
     color: rgb(255, 113, 146);
 }
 
