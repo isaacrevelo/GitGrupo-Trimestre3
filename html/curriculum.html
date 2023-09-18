@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
-    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/curriculum.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
 </head>
 <body>
     <header class="encabezado">
         <section class="logo_encabezado">
-            <img src="../img/login/example_logo.png"/>
+            <span>User Select</span>
+            <!-- <img src="../img/login/example_logo.png"/> -->
         </section>
 
         <section class="btns_encabezado">
@@ -43,62 +44,66 @@
 
     </header>
 
-    <main>
+    <main class="contenido">
         <section class="container">
             <article class="tab_curriculum">
-                <button>Datos Personales</button>
-                <button>Estudios</button>
-                <button>Experiencia</button>
-                <button>Idiomas</button>
+                <button id="btn1" onclick="openDatos()" class="btn_tab btn_tab_1">Datos Personales</button>
+                <button id="btn2" onclick="openEstudios()" class="btn_tab">Estudios</button>
+                <button id="btn3" onclick="openExperiencia()" class="btn_tab">Experiencia</button>
+                <button id="btn4" onclick="openIdiomas()" class="btn_tab btn_tab_4">Idiomas</button>
             </article>
-            <article>
-                <div class="content">
-                   <form>
-                        <label for="nombres">
+            <article class="container_general">
+                <div id="contenido1" class="content content_1">
+                   <form class="formulario form1">
+                        <label class="labels" for="nombres">
                             <span>Nombres</span>
                             <input id="nombres" type="text" name="nombres"/>
                         </label>
-                        <label for="apellidos">
+                        <label class="labels" for="apellidos">
                             <span>Apellidos</span>
                             <input id="apellidos" type="text" name="apellidos"/>
                         </label>
-                        <label for="correo">
+                        <label class="labels" for="correo">
                             <span>Correo</span>
                             <input id="correo" type="email" name="correo"/>
                         </label>
-                        <label for="telefono">
+                        <label class="labels" for="telefono">
                             <span>Telefono</span>
                             <input id="telefono" type="text" name="telefono"/>
                         </label>
-                        <label>
+                        <label class="label_select">
                             <span>Ubicacion</span>
-                            <select name="departamento">
-                                <option>Bogota D.C</option>
-                                <option>Valle del Cauca</option>
-                            </select>
-                            <select name="ciudad">
-                                <option>Bogota D.C</option>
-                                <option>Cali</option>
-                            </select>
+                            <div>
+                                <select name="departamento">
+                                    <option>Bogota D.C</option>
+                                    <option>Valle del Cauca</option>
+                                </select>
+                                <select name="ciudad">
+                                    <option>Bogota D.C</option>
+                                    <option>Cali</option>
+                                </select>
+                            </div>                            
                         </label>
-                        <label for="direccion">
+                        <label class="labels" for="direccion">
                             <span>Direccion Residencia</span>
                             <input id="direccion" type="text" name="direccion"/>
                         </label>
-                        <label>
+                        <label class="labels" for="tipo_sangre">
                             <span>Tipo de Sangre</span>
-                            <select>
+                            <select name="tipo_sangre">
                                 <option>AB+</option>
                                 <option>O+</option>
                             </select>
                         </label>
-                        <label>
+                        <label class="labels">
                             <span>Genero</span>
                             <select>
                                 <option>Hombre</option>
                                 <option>Mujer</option>
                             </select>
                         </label>
+                    </form>
+                    <form class="formulario form2">
                         <label>
                             <span>Tipo Documento</span>
                             <select>
@@ -106,33 +111,33 @@
                                 <option>..</option>
                             </select>
                         </label>
-                        <label for="nro_documento">
+                        <label class="labels" for="nro_documento">
                             <span>Numero Documento</span>
                             <input id="nro_documento" type="text" name="nro_documento"/>
                         </label>
-                        <label for="fecha_expidicion_documento">
+                        <label class="labels" for="fecha_expidicion_documento">
                             <span>Fecha Expedicion</span>
                             <input id="fecha_expidicion_documento" type="date" name="fecha_expidicion_documento" >
                         </label>
-                        <label for="fecha_nacimiento">
+                        <label class="labels" for="fecha_nacimiento">
                             <span>Fecha Nacimiento</span>
                             <input id="fecha_nacimiento" type="date" name="fecha_nacimiento" >
                         </label>
-                        <div>
+                        <label class="labels">
                             <span>Estado Civil</span>
                             <select>
                                 <option>Soltero</option>
                                 <option>..</option>
                             </select>
-                        </div>
-                        <label>
+                        </label>
+                        <label class="labels">
                             <span>Libreta Militar</span>
                             <select>
                                 <option>Libreta de Primera</option>
                                 <option>..</option>
                             </select>
                         </label>
-                        <label>
+                        <label class="labels">
                             <span>Estrato</span>
                             <select>
                                 <option>1</option>
@@ -143,7 +148,7 @@
                    </form> 
                 </div>
 
-                <div class="content">
+                <div id="contenido2" class="content content_2">
                    <form>
                         <label for="baciller">
                             <span>Bachiller</span>
@@ -164,7 +169,7 @@
                    </form> 
                 </div>
 
-                <div class="content">
+                <div id="contenido3" class="content content_3">
                     <hr><span>Trabajo</span><hr>
                     <select>
                         <option>Trabajo Formal</option>
@@ -190,7 +195,7 @@
                    </form> 
                 </div>
 
-                <div class="content">
+                <div id="contenido4" class="content content_4">
                     <hr><span>Idiomas Aquiridos</span><hr>
                    <form>
                         <label>
@@ -217,8 +222,44 @@
             </article>
         </section>
     </main>
+    <script>
+        var contenido1 = document.getElementById("contenido1");
+        var contenido2 = document.getElementById("contenido2");
+        var contenido3 = document.getElementById("contenido3");
+        var contenido4 = document.getElementById("contenido4");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
 
-    <footer class="pie_pagina">
+            function openDatos(){
+                contenido1.style.transform = "translateX(0%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            
+            function openEstudios(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(0%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            function openExperiencia(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(0%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            function openIdiomas(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(0%)";
+            }
+    </script>
+
+    <footer class="pie_pagina"> 
         <section class="p_footer">
             <p>aqui va un parrafo aqui va un parrafo
                 aqui va un parrafo aqui va un parrafo
