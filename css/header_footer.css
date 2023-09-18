@@ -24,8 +24,8 @@ html{
     position: relative;
     display: grid;
     height: 85px;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    padding: 0% 1%;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    padding: 0% 1%; 
     background-color: #9ca5db;
     box-shadow: 0 5px 15px #bbc1e5;
 }
@@ -53,7 +53,7 @@ html{
 .nav_links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 80%;
     height: 50%;
@@ -71,7 +71,7 @@ html{
 .links{
     display: flex;
     justify-content: center;
-    width: 22%;
+    width: 15%;
     transition: background-color 0.7s ease;
     cursor: pointer;
 }
@@ -94,7 +94,7 @@ html{
     color: rgb(255, 113, 146);
 }
 
-.buscador_encabezado{
+/* .buscador_encabezado{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,7 @@ html{
     width: 80%;
     height: 38px;
     border-radius: 15px;
-}
+} */
 
 .usuario_encabezado{
     display: flex;
