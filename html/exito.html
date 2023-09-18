@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Detalle Vacante</title>
     <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/detallevacante.css">
 </head>
 <body>
     <header class="encabezado">
@@ -16,13 +16,13 @@
 
         <section class="btns_encabezado">
             <button class="btn_header">
-                <a href="../index.html" target="">Home</a>
+                <a href="login.html" target="">Home</a>
             </button>
             <button class="btn_header">
                 <a href="" target="">Empresas</a>
             </button>
             <button class="btn_header">
-                <a href="vacantes.html" target="">Vacantes</a>
+                <a href="" target="">Vacantes</a>
             </button>
             <button class="btn_header">
                 <a href="" target="">About ToU</a>
@@ -35,46 +35,43 @@
 
         <section class="usuario_encabezado">
             <picture class="icons_user_1">
-                <a href="login.html"><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
             </picture>
             <picture class="icons_user_2">
                 <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
             </picture>
         </section>
+
     </header>
-
-    <main class="contenido">
-        <section class="container_login">
-            <article class="img_login">
-                <img src="../img/login/select_candidates_illustrations.jpg"/>
-            </article>
-            <article class="iniciar_sesion">
-                <h2 class="name">Login</h2>
-                <form class="form_login">
-                    <label for="dni">
-                        <span>Documento</span>
-                        <input id="dni" type="text" name="dni" placeholder=" ..numero documento.. "/>
-                    </label>
-                    <label for="password">
-                        <span>Contraseña</span>
-                        <input id="password" type="password" name="password" placeholder=" ..contraseña usuario.. "/>
-                    </label>
-                    <button type="submit" class="btn_login">Entrar</button>
-                </form>
-                <div class="separator">
-                    <hr>
-                    <span> ..o.. </span>
-                    <hr>
-                </div>
-                <div class="registrarse">
-                    <button type="submit" class="btn_register">
-                        <a href="" target="">Registrarse</a>
-                    </button>
-                </div>
-            </article>
-        </section>
-    </main>
-
+    <section class="empresa">
+        <picture>
+            <img src="../img/vacantes/exitologo.png" alt="company.jpg">
+        </picture>
+        <span>Grupo Éxito es una empresa minorista que opera múltiples formatos de tiendas en Colombia y otros países de América Latina. Su compromiso con la calidad y la accesibilidad la convierten en una opción preferida para los consumidores.</span>
+    </section>
+    <section class="lista_cargos">
+        <article class="cargo">
+            <h2>Gerente de Tienda</h2>
+            <p>Supervisa las operaciones diarias de una tienda, asegurando la disponibilidad de productos, la atención al cliente y la gestión del personal.</p>
+            <button class="detalle">
+                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
+            </button>
+        </article>
+        <article class="cargo">
+            <h2>Analista de Compras</h2>
+            <p>Responsable de identificar oportunidades de abastecimiento, negociar con proveedores y gestionar el inventario de productos.</p>
+            <button class="detalle">
+                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
+            </button>
+        </article>
+        <article class="cargo">
+            <h2>Especialista en Logística y Distribución</h2>
+            <p>Coordina la cadena de suministro y la distribución eficiente de productos a las tiendas del grupo.</p>
+            <button class="detalle">
+                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
+            </button>
+        </article>
+    </section>
     <footer class="pie_pagina">
         <section class="p_footer">
             <p>aqui va un parrafo aqui va un parrafo
