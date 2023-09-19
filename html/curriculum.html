@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="../css/curriculum.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+</head>
+<body>
+    <header class="encabezado">
+        <section class="logo_encabezado">
+            <span>User Select</span>
+            <!-- <img src="../img/login/example_logo.png"/> -->
+        </section>
+
+        <section class="navbar_encabezado">
+            <ul class="nav_links">
+                <li class="links">
+                    <a href="../index.html" target="_self">Home</a>
+                </li>
+                <li class="links">
+                    <a href="#" target="_self">Empresas</a>
+                </li>
+                <li class="links">
+                    <a href="#" target="_self">Vacantes</a>
+                </li>
+                <li class="links">
+                    <a href="#" target="_self">About Us</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- <section class="buscador_encabezado">
+            <input class="input_search" type="search" placeholder="Buscar(cargo, ubicacion, empresa...)"/>
+        </section> -->
+
+        <section class="usuario_encabezado">
+            <picture class="icons_user_1">
+                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+            </picture>
+            <picture class="icons_user_2">
+                <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
+            </picture>
+        </section>
+
+    </header>
+
+    <main class="contenido">
+        <section class="container">
+            <article class="tab_curriculum">
+                <button id="btn1" onclick="openDatos()" class="btn_tab btn_tab_1">Datos Personales</button>
+                <button id="btn2" onclick="openEstudios()" class="btn_tab">Estudios</button>
+                <button id="btn3" onclick="openExperiencia()" class="btn_tab">Experiencia</button>
+                <button id="btn4" onclick="openIdiomas()" class="btn_tab btn_tab_4">Idiomas</button>
+            </article>
+            <article class="container_general">
+                <div id="contenido1" class="content content_1">
+                   <form class="formulario form1">
+                        <label class="labels" for="nombres">
+                            <span>Nombres</span>
+                            <input id="nombres" type="text" name="nombres"/>
+                        </label>
+                        <label class="labels" for="apellidos">
+                            <span>Apellidos</span>
+                            <input id="apellidos" type="text" name="apellidos"/>
+                        </label>
+                        <label class="labels" for="correo">
+                            <span>Correo</span>
+                            <input id="correo" type="email" name="correo"/>
+                        </label>
+                        <label class="labels" for="telefono">
+                            <span>Telefono</span>
+                            <input id="telefono" type="tel" name="telefono"/>
+                        </label>
+                        <label class="label_select">
+                            <span>Ubicacion</span>
+                            <div>
+                                <select name="departamento">
+                                    <option>Bogota D.C</option>
+                                    <option>Valle del Cauca</option>
+                                </select>
+                                <select name="ciudad">
+                                    <option>Bogota D.C</option>
+                                    <option>Cali</option>
+                                </select>
+                            </div>                            
+                        </label>
+                        <label class="labels" for="direccion">
+                            <span>Direccion Residencia</span>
+                            <input id="direccion" type="text" name="direccion"/>
+                        </label>
+                        <label class="labels" for="tipo_sangre">
+                            <span>Tipo de Sangre</span>
+                            <select name="tipo_sangre">
+                                <option>AB+</option>
+                                <option>O+</option>
+                            </select>
+                        </label>
+                        <label class="labels">
+                            <span>Genero</span>
+                            <select>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+                        </label>
+                    </form>
+                    <form class="formulario form2">
+                        <label>
+                            <span>Tipo Documento</span>
+                            <select>
+                                <option>Cedula de Ciudadania</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label class="labels" for="nro_documento">
+                            <span>Numero Documento</span>
+                            <input id="nro_documento" type="text" name="nro_documento"/>
+                        </label>
+                        <label class="labels" for="fecha_expidicion_documento">
+                            <span>Fecha Expedicion</span>
+                            <input id="fecha_expidicion_documento" type="date" name="fecha_expidicion_documento" >
+                        </label>
+                        <label class="labels" for="fecha_nacimiento">
+                            <span>Fecha Nacimiento</span>
+                            <input id="fecha_nacimiento" type="date" name="fecha_nacimiento" >
+                        </label>
+                        <label class="labels">
+                            <span>Estado Civil</span>
+                            <select>
+                                <option>Soltero</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label class="labels">
+                            <span>Libreta Militar</span>
+                            <select>
+                                <option>Libreta de Primera</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label class="labels">
+                            <span>Estrato</span>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </label>
+                   </form> 
+                </div>
+
+                <div id="contenido2" class="content content_2">
+                   <form class="form3">
+                        <label for="baciller">
+                            <span>Bachiller</span>
+                            <input id="bachiller" type="file" name="bachiller">
+                        </label>
+                        <label for="tecnologia">
+                            <span>Tecnologia</span>
+                            <input id="tecnologia" type="file" name="tecnologia">
+                        </label>
+                        <label for="titulo_profesional">
+                            <span>Titulo Profesional</span>
+                            <input id="titulo_profesional" type="file" name="titulo_profesional">
+                        </label>
+                        <label for="maestria">
+                            <span>Maestria</span>
+                            <input id="maestria" type="file" name="maestria">
+                        </label>
+                   </form> 
+                </div>
+
+                <div id="contenido3" class="content content_3">
+                    <article>
+                        <hr>
+                        <select>
+                            <option>Trabajo Formal</option>
+                            <option>Trabajo Informal</option>
+                        </select>
+                    </article>
+                   <form class="form4">
+                        <label for="nombre_empresa">
+                            <span>Nombre Empresa</span>
+                            <input id="nombre_empresa" type="text" name="nombre_empresa">
+                        </label>
+                        <label for="fecha_inicio">
+                            <span>Fecha inicio</span>
+                            <input id="fecha_inicio" type="date" name="fecha_inicio">
+                        </label>
+                        <label for="fecha_fin">
+                            <span>Fecha Fin</span>
+                            <input id="fecha_fin" type="date" name="fecha_fin">
+                        </label>
+                        <label for="telefono_empresa">
+                            <span>Telefono Empresa</span>
+                            <input id="telefono_empresa" type="tel" name="telefono_empresa">
+                        </label>
+                        <label for="certificado">
+                            <span>Certificado</span>
+                            <input id="certificado" type="file" name="certificado">
+                        </label>
+                   </form> 
+                </div>
+
+                <div id="contenido4" class="content content_4">
+                   <form class="form5">
+                        <label>
+                            <span>Agregar Idioma</span>
+                            <select>
+                                <option>Ingles</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Nivel Idioma</span>
+                            <select>
+                                <option>A1</option>
+                                <option>A2</option>
+                                <option>B1</option>
+                                <option>B1</option>
+                            </select>
+                        </label>
+                        <label for="certificado_idioma">
+                            <span>Certificado</span>
+                            <input id="certificado_idioma" type="file" name="certificado_idioma">
+                        </label>
+                   </form> 
+                </div>
+            </article>
+        </section>
+    </main>
+    <script>
+        var contenido1 = document.getElementById("contenido1");
+        var contenido2 = document.getElementById("contenido2");
+        var contenido3 = document.getElementById("contenido3");
+        var contenido4 = document.getElementById("contenido4");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+
+            function openDatos(){
+                contenido1.style.transform = "translateX(0%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            
+            function openEstudios(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(0%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            function openExperiencia(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(0%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            function openIdiomas(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(0%)";
+            }
+    </script>
+
+    <footer class="pie_pagina"> 
+        <section class="p_footer">
+            <p>aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo
+            </p>
+        </section>
+        <section class="btns_footer">
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_facebook_circular.png" alt="facebook"/></a>
+            </picture>
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_whatsapp.png" alt="whatsapp"/></a>
+            </picture>
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_social.png" alt="social"/></a>
+            </picture>
+        </section>
+        <section class="add_footer">
+            <picture>
+                <a href="" target=""><img src="../img/login/icon_help.png" alt="ayuda"/></a>
+            </picture>
+        </section>
+    </footer>
+</body>
+</html>
