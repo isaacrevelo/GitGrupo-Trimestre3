@@ -1,0 +1,66 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: whitesmoke;  
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 10px 15px;
+}
+
+.empresa {
+    display: flex;
+    max-width: 800px;
+    height: 200px;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 7px;
+}
+
+.empresa img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.lista_cargos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+}
+
+.cargo {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.cargo h2 {
+    align-self: baseline;
+}
+
+.cargo button {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:750px) {
+    .empresa {
+        margin: 20px;
+    }
+    .cargo {
+        max-width: 100%;
+    }
+}
