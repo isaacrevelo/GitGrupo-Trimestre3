@@ -56,7 +56,7 @@
 }
 
 .form_login label input{
-    width: 320px;
+    width: 80%;
     height: 35px;
     padding: 3%;
 }
@@ -135,12 +135,13 @@
     }
 
     .container_login {
+        position: absolute;
         width: 63%;
         height: 67%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        position: relative;
         box-shadow: 5px 5px;
+        z-index: -7;
     }
 
     .img_login{

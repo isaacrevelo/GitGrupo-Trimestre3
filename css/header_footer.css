@@ -192,14 +192,22 @@ html{
 @media only screen and (max-width: 600px) {
 
     .encabezado{
+        width: 100%;
         display: flex;
         grid-template-columns: none;
         flex-direction: row;
         justify-content: space-between;
+        padding: 4px;
+    }
+    
+    .logo_encabezado{
+        padding: 5px;
     }
 
     .icons_nav{
-        display: inline-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #check:checked~.icons_nav #menu-icon{
@@ -218,18 +226,19 @@ html{
         position: absolute;
         top: 100%; 
         left: 0;
-        height: 0;
+        height: 300px;
         width: 100%;
-        background-color: rgb(255, 0, 0);
+        background-color: #bbc1e5ef;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.01);
+        transform: translateY(-130%);
+        /* transition: transform 0.3s ease-in-out; */
     }
 
-    #check:checked+.navbar_encabezado{
-        height: 17.7rem;
+    #check:checked~.navbar_encabezado{ 
+        transform: translateY(0%);
     }
 
     .nav_links {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -239,6 +248,10 @@ html{
         font-size: 1.1rem;
         margin: 1.5rem;
         text-align: center;
+    }
+
+    .usuario_encabezado{
+        padding: 5px;
     }
 
     .pie_pagina{
