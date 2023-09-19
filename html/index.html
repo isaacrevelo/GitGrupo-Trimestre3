@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="header_footer.css" src="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <title>Home</title>
 </head>
 <style>
@@ -62,23 +62,21 @@
             <!-- <img src="../img/login/example_logo.png"/> -->
         </section>
 
-        <section class="btns_encabezado">
-            <button class="btn_header">
-                <a href="../html/Index.html" target="">Home</a>
-            </button>
-            <button class="btn_header">
-                <a href="../html/vacantes.html" target="">Empresas</a>
-            </button>
-            <button class="btn_header">
-                <a href="../html/vacantes.html" target="">Vacantes</a>
-            </button>
-            <button class="btn_header">
-                <a href="" target="">About ToU</a>
-            </button>
-        </section>
-
-        <section class="buscador_encabezado">
-            <input class="input_search" type="search" placeholder="Buscar(cargo, ubicacion, empresa...)"/>
+        <section class="navbar_encabezado">
+            <ul class="nav_links">
+                <li class="links">
+                    <a href="index.html" target="_self">Home</a>
+                </li>
+                <li class="links">
+                    <a href="vacantes.html" target="_self">Empresas</a>
+                </li>
+                <li class="links">
+                    <a href="#" target="_self">Vacantes</a>
+                </li>
+                <li class="links">
+                    <a href="about.html" target="_self">About Us</a>
+                </li>
+            </ul>
         </section>
 
         <section class="usuario_encabezado">
@@ -89,34 +87,38 @@
                 <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
             </picture>
         </section>
-
     </header>
-    <div class="container">
-        <section class="Section1">
-            <img class="imagen" src="Img/shape-if.png" alt="FotoPersona">
-            <p>Persona</p>
-        </section>
 
-        <section class="Section1">
-            <img class="imagen" src="Img/Innatos-Segundo-empresas-de-manufactura-SUBTITULO.png" alt="FotoEmpresa">
-            <p>Empresa</p>
-        </section>
-    </div>
+    <main>
+        <div class="container">
+            <section class="Section1">
+                <img class="imagen" src="Img/shape-if.png" alt="FotoPersona">
+                <p>Persona</p>
+            </section>
 
-    <div class="square-section">
-        <div class="square-section-inner">
-            <h2>Seccion para Login</h2>
-            <div class="square-inputs">
-                <button class="login-button">Login</button>
-                <button class="signup-button">Sign up</button>
+            <section class="Section1">
+                <img class="imagen" src="Img/Innatos-Segundo-empresas-de-manufactura-SUBTITULO.png" alt="FotoEmpresa">
+                <p>Empresa</p>
+            </section>
+        </div>
+
+        <div class="square-section">
+            <div class="square-section-inner">
+                <h2>Seccion para Login</h2>
+                <div class="square-inputs">
+                    <button class="login-button">Login</button>
+                    <button class="signup-button">Sign up</button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
     <footer class="pie_pagina">
         <section class="p_footer">
             <p>aqui va un parrafo aqui va un parrafo
                 aqui va un parrafo aqui va un parrafo
                 aqui va un parrafo aqui va un parrafo
+                aqui va un parrafo
             </p>
         </section>
         <section class="btns_footer">

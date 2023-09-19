@@ -1,20 +1,3 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    background-color: whitesmoke;  
-    font-family: 'Noto Serif', serif;
-    font-weight: 300;
-    overflow-x: hidden;
-}
-
-body{
-    margin: 10px 15px;
-}
-
 .lista_vacantes {
     display: flex;
     flex-direction: column;
