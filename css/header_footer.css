@@ -72,8 +72,11 @@ html{
     display: flex;
     justify-content: center;
     width: 15%;
-    transition: background-color 0.7s ease;
     cursor: pointer;
+}
+
+.links a{
+    transition: background-color 0.7s ease;
 }
 
 .links a:link{
