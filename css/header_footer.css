@@ -189,7 +189,7 @@ html{
     height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 900px) {
 
     .encabezado{
         width: 100%;
@@ -197,7 +197,7 @@ html{
         grid-template-columns: none;
         flex-direction: row;
         justify-content: space-between;
-        padding: 4px;
+        padding: 5px;
     }
     
     .logo_encabezado{
@@ -231,6 +231,7 @@ html{
         background-color: #bbc1e5ef;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.01);
         transform: translateY(-130%);
+        z-index: 100;
         /* transition: transform 0.3s ease-in-out; */
     }
 
@@ -244,7 +245,6 @@ html{
     }
 
     .nav_links li{
-        display: block;
         font-size: 1.1rem;
         margin: 1.5rem;
         text-align: center;
@@ -262,26 +262,9 @@ html{
     }
 } 
 
-@media only screen and (min-width: 600px) {
-
-    /*  */
-} 
-
-@media only screen and (min-width: 768px) {
-
-    /*  */
-} 
-
-@media only screen and (min-width: 992px) {
-
-    /*  */
-} 
-
-@media only screen and (min-width: 1200px) {
-
-    /*  */
-}
 
 @media (min-width: 1300px) {
-  
+
+    /*  */
 }
+
