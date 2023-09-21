@@ -128,7 +128,7 @@
     color: rgb(255, 113, 146);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     
     .contenido{
         height: 1000px;
@@ -175,39 +175,7 @@
 
 }
 
-@media only screen and (min-width: 600px) {
-
-    /*  */
-} 
-
-@media only screen and (min-width: 768px) {
-
-    /*  */
-} 
-
-@media only screen and (min-width: 992px) {
-
-    /*  */
-} 
-
-@media only screen and (min-width: 1200px) {
-
-    /*  */
-}
 
 @media (min-width: 1300px) {
-  
-}
-
-@media (min-width: 1300px) {
-
-    .contenido{ 
-        background-color: #495394;
-        height: 900px;
-    }
-
-    .container_login{
-        width: 70%;
-        height: 80vh;
-    }   
+ 
 }
