@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Vacante</title>
-    <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="stylesheet" href="../css/detallevacante.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
 </head>
 <body>
     <header class="encabezado">
@@ -16,13 +17,13 @@
 
         <section class="btns_encabezado">
             <button class="btn_header">
-                <a href="login.html" target="">Home</a>
+                <a href="index.html" target="">Home</a>
             </button>
             <button class="btn_header">
                 <a href="" target="">Empresas</a>
             </button>
             <button class="btn_header">
-                <a href="" target="">Vacantes</a>
+                <a href="html/vacantes.html" target="">Vacantes</a>
             </button>
             <button class="btn_header">
                 <a href="" target="">About ToU</a>
@@ -35,44 +36,59 @@
 
         <section class="usuario_encabezado">
             <picture class="icons_user_1">
-                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+                <a href="html/login.html"><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
             </picture>
             <picture class="icons_user_2">
                 <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
             </picture>
         </section>
-
     </header>
-    <section class="empresa">
-        <picture>
-            <img src="../img/vacantes/aviancalogo.jpg" alt="company.jpg">
-        </picture>
-        <span>Avianca Holdings es una empresa de transporte aéreo que se enorgullece de su legado y tradición en la industria de la aviación. Ofrece vuelos a numerosos destinos en todo el mundo y ha sido un referente en la región durante décadas.</span>
-    </section>
-    <section class="lista_cargos">
-        <article class="cargo">
-            <h2>Piloto de Aviación Comercial</h2>
-            <p>Realiza vuelos comerciales de pasajeros o carga, asegurando la seguridad y comodidad de los pasajeros y el cumplimiento de los protocolos de aviación.
-            </p>
-            <button class="detalle">
-                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
-            </button>
-        </article>
-        <article class="cargo">
-            <h2>Tripulante de Cabina de Pasajeros (TCP)</h2>
-            <p>Atiende a los pasajeros a bordo, garantizando su seguridad y comodidad durante el vuelo, y siguiendo los protocolos de seguridad.</p>
-            <button class="detalle">
-                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
-            </button>
-        </article>
-        <article class="cargo">
-            <h2>Gerente de Marketing de Aerolíneas</h2>
-            <p>Lidera las estrategias de marketing para promocionar las rutas y servicios de Avianca, así como la gestión de la marca y la comunicación corporativa.</p>
-            <button class="detalle">
-                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
-            </button>
-        </article>
-    </section>
+
+    <div class="menu-bar">
+        <ul class="menu-list">
+            <li><a href="#inicio">Empresas</a></li>
+            <li><a href="#acerca">Postulaciones</a></li>
+            <li><a href="#servicios">Contratos</a></li>
+            <li><a href="#contacto">Busqueda avanzada</a></li>
+        </ul>
+    </div>
+    
+    <div class="content" id="inicio">
+        <h2>Empresas</h2>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Buscar empresas...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <p>Este es el contenido de la página de las empresas.</p>
+    </div>
+    
+    <div class="content" id="acerca">
+        <h2>Postulaciones</h2>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Buscar de Postulaciones">
+            <button class="search-button">Buscar</button>
+        </div>
+        <p>Esta es la página de información sobre las postulaciones.</p>
+    </div>
+    
+    <div class="content" id="servicios">
+        <h2>Contratos</h2>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Buscar en Contratos...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <p>Aquí encontrarás información sobre nuestros Contratos</p>
+    </div>
+    
+    <div class="content" id="contacto">
+        <h2>Busqueda avanzada</h2>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Buscar en Busqueda avanzada...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <p>Puedes contactarnos a través de la siguiente información de Busqueda avanzada</p>
+    </div>
+
     <footer class="pie_pagina">
         <section class="p_footer">
             <p>aqui va un parrafo aqui va un parrafo
