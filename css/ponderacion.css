@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.lista_requisitos {
+    margin-bottom: 30px;
+}
+
+.lista_requisitos h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.docs {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.subir, .apli {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.subir:hover, .apli:hover {
+    background-color: #0056b3;
+}
