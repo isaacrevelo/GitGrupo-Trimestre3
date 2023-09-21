@@ -60,7 +60,7 @@
     display: flex;
     align-items: center;
     width: 45%;
-    height: 50px;
+    height: 55px;
     background-color: white;
     border-radius: 7px 90px 0 0;
     padding: 1px 15px;
@@ -70,7 +70,7 @@
 .btn_tab{
     transition: all 0.6s ease;
     width: 20%;
-    height: 90%;
+    height: 85%;
     padding: 2px 2px;
     background-color: transparent;
     transform: skew(20deg, 0deg);
@@ -153,6 +153,7 @@
     transform: translateX(100%);
 }
 
+/*  */
 .content_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -200,6 +201,7 @@
     height: 100%;
 }
 
+/*  */
 .content_2{
     display: flex;
     align-items: flex-start;
@@ -209,22 +211,81 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     padding: 3% 4%;
-    gap: 80px;
+    gap: 50px;
 }
 
-.form3 label{
+.form3 div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.form3_content hr, span, select{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.labels2{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    height: 8%;
+    padding: 5px;
 }
 
-.form3 input[type="file"]{
-    width: 70%;
+.labels2_0{
+    display: flex;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
 }
+
+.label_unico{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.label_unico input[type=file]{
+    width: 95%;
+    height: 100%;
+}
+
+.labels2_0 hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.labels2_1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.labels2_1 select{
+    width: 95%;
+    height: 100%;
+}
+
+.labels2_2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.labels2_2 input[type=file]{
+    width: 75%;
+    height: 100%;
+}
+
+.select_unico{
+    width: 20%;
+}
+
+/*  */
 .content_3{
     display: flex;
     flex-direction: column;
@@ -255,6 +316,7 @@
     height: 30%;
     grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr;
+    gap: 15px;
 }
 
 .form4 label{
@@ -273,6 +335,7 @@
     height: 85%;
 }
 
+/*  */
 .content_4{
     display: flex;
     justify-content: flex-start;
@@ -290,7 +353,7 @@
 .form5 label{
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 5px;
 }
 
 .form5 select{
@@ -322,6 +385,7 @@
         height: 1700px;
     }
 
+    /*  */
     .content_1{
         display: flex;
         flex-direction: column;
@@ -356,6 +420,26 @@
         width: 100%;
     }
 
+    /*  */
+    .form3 div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .labels2_1 select{
+        width: 100%;
+    }
+    
+    .labels2_2{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+
+    /*  */
     .form3{
         width: 100%;
     }
@@ -373,6 +457,8 @@
         height: 40%;
     }
 
+    /*  */
+
     .form4{
         width: 100%;
         height: 100%;
@@ -387,7 +473,6 @@
 
     .form5{
         width: 100%;
-        gap: 15px;
     }
 
     .form5 select{

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
+    <title>Hoja de Vida</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/curriculum.css">
@@ -116,8 +116,8 @@
                             </select>
                         </label>
                         <label class="labels" for="nro_documento">
-                            <span>Numero Documento</span>
-                            <input id="nro_documento" type="text" name="nro_documento"/>
+                            <span>Numero Documento</span>   
+                            <input id="nro_documento" type="text" name="nro_documento"/>                           
                         </label>
                         <label class="labels" for="fecha_expidicion_documento">
                             <span>Fecha Expedicion</span>
@@ -154,22 +154,83 @@
 
                 <div id="contenido2" class="content content_2">
                    <form class="form3">
-                        <label for="baciller">
-                            <span>Bachiller</span>
-                            <input id="bachiller" type="file" name="bachiller">
+                        <div  class="form3_content">
+                            <label class="labels2_0">
+                                <hr><span>Bachiller</span>
+                                    <select class="select_unico">
+                                        <option>Si</option>
+                                        <option>No</option>
+                                    </select>
+                                </label>
+                            </label>
+                            <label class="labels2 label_unico">
+                                <span>Certificado</span>
+                                <input id="bachiller" type="file" name="bachiller">
+                            </label>
+                        </div>
+                        <div class="form3_content">
+                            <label class="labels2_0">                   
+                                <hr><span>Tecnologia</span>
+                                <select class="select_unico">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                    <option>Tecnico</option>
+                                </select>
+                            </label>    
+                            <label class="labels2 labels2_1">
+                                <span>Cual Ocupacion:</span>
+                                <select>
+                                    <option>Programacion de Software</option>
+                                    <option>Desarrollo de Software</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_2">
+                                <span>Certificado:</span>
+                                <input id="tecnologia" type="file" name="tecnologia">
+                            </label>
+                        </div>
+                        <div class="form3_content">
+                            <label class="labels2_0">
+                                <hr><span>Titulo Profesional</span>
+                                <select class="select_unico">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </label>
+                            </select>
+                            <label class="labels2 labels2_1">
+                                <span>Cual Ocupacion:</span>
+                                <select class="select_unico">
+                                    <option>Ingenieria de Sistemas</option>
+                                    <option>Ingenieria Industrial</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_2">
+                                <span>Certificado</span>
+                                <input id="titulo_profesional" type="file" name="titulo_profesional">
+                            </label>
+                        </div>
+                        <div class="form3_content">
+                            <label class="labels2_0">
+                                <hr><span>Maestria</span>
+                                <select class="select_unico">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_1">
+                                <span>Cual Ocupacion:</span>
+                                <select>
+                                    <option>Ingenieria de Sistemas</option>
+                                    <option>Ingenieria Industrial</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_2">
+                                <span>Certificado</span>
+                                <input id="maestria" type="file" name="maestria">
+                            </label>    
                         </label>
-                        <label for="tecnologia">
-                            <span>Tecnologia</span>
-                            <input id="tecnologia" type="file" name="tecnologia">
-                        </label>
-                        <label for="titulo_profesional">
-                            <span>Titulo Profesional</span>
-                            <input id="titulo_profesional" type="file" name="titulo_profesional">
-                        </label>
-                        <label for="maestria">
-                            <span>Maestria</span>
-                            <input id="maestria" type="file" name="maestria">
-                        </label>
+                        </div>
                    </form> 
                 </div>
 
@@ -207,13 +268,14 @@
 
                 <div id="contenido4" class="content content_4">
                    <form class="form5">
-                        <label>
+                        <label for="tipo_idioma">
                             <span>Agregar Idioma</span>
                             <select>
                                 <option>Ingles</option>
+                                <option>Aleman</option>
                             </select>
                         </label>
-                        <label>
+                        <label for="nivel_idioma">
                             <span>Nivel Idioma</span>
                             <select>
                                 <option>A1</option>

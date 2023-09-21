@@ -59,23 +59,18 @@ html{
     height: 50%;
 }
 
-.nav_links li{
-    list-style-type: none;
-}
-
-.nav_links a{
-    text-decoration: none;
-    transition: color 0.7s ease;
-}
-
 .links{
     display: flex;
     justify-content: center;
-    width: 15%;
+    width: 100%;
     cursor: pointer;
+    list-style-type: none;
+    transition: color 0.9s ease;
 }
 
 .links a{
+    text-decoration: none;
+    font-size: x-large;
     transition: background-color 0.7s ease;
 }
 
@@ -88,7 +83,7 @@ html{
 }
 
 .links a:hover{
-    padding: 5%;
+    padding: 4%;
     background-color: #f1efef;
     color: black;
     /* color: rgb(45, 58, 119); */
