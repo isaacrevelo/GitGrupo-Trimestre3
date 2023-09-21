@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacantes Avianca</title>
     <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="stylesheet" href="../css/detallevacante.css">
+    <title>Home</title>
 </head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .Section1 {
+        flex: 1;
+        padding: 20px;
+        background-color: #f0f0f0;
+        margin: 10px;
+    }
+
+    .imagen {
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .square-section {
+        flex: 1;
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .square-section-inner {
+        background-color: #fff;
+        padding: 20px; 
+        border: 1px solid #ccc;
+        border-radius: 5px; 
+    }
+
+    .square-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input[type="text"],
+    button {
+        width: 100%;
+    }
+</style>
 <body>
     <header class="encabezado">
         <section class="logo_encabezado">
@@ -41,38 +89,29 @@
         </section>
     </header>
 
-<main>
-    <section class="empresa">
-        <picture>
-            <img src="../img/vacantes/aviancalogo.jpg" alt="company.jpg">
-        </picture>
-        <span>Avianca Holdings es una empresa de transporte aéreo que se enorgullece de su legado y tradición en la industria de la aviación. Ofrece vuelos a numerosos destinos en todo el mundo y ha sido un referente en la región durante décadas.</span>
-    </section>
-    <section class="lista_cargos">
-        <article class="cargo">
-            <h2>Piloto de Aviación Comercial</h2>
-            <p>Realiza vuelos comerciales de pasajeros o carga, asegurando la seguridad y comodidad de los pasajeros y el cumplimiento de los protocolos de aviación.
-            </p>
-            <button class="detalle">
-                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
-            </button>
-        </article>
-        <article class="cargo">
-            <h2>Tripulante de Cabina de Pasajeros (TCP)</h2>
-            <p>Atiende a los pasajeros a bordo, garantizando su seguridad y comodidad durante el vuelo, y siguiendo los protocolos de seguridad.</p>
-            <button class="detalle">
-                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
-            </button>
-        </article>
-        <article class="cargo">
-            <h2>Gerente de Marketing de Aerolíneas</h2>
-            <p>Lidera las estrategias de marketing para promocionar las rutas y servicios de Avianca, así como la gestión de la marca y la comunicación corporativa.</p>
-            <button class="detalle">
-                <a href="../html/ponderacion.html">Detalles y Aplicar</a>
-            </button>
-        </article>
-    </section>
-</main>
+    <main>
+        <div class="container">
+            <section class="Section1">
+                <img class="imagen" src="Img/shape-if.png" alt="FotoPersona">
+                <p>Persona</p>
+            </section>
+
+            <section class="Section1">
+                <img class="imagen" src="Img/Innatos-Segundo-empresas-de-manufactura-SUBTITULO.png" alt="FotoEmpresa">
+                <p>Empresa</p>
+            </section>
+        </div>
+
+        <div class="square-section">
+            <div class="square-section-inner">
+                <h2>Seccion para Login</h2>
+                <div class="square-inputs">
+                    <button class="login-button">Login</button>
+                    <button class="signup-button">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="pie_pagina">
         <section class="p_footer">
@@ -100,4 +139,3 @@
         </section>
     </footer>
 </body>
-</html>

@@ -24,8 +24,8 @@ html{
     position: relative;
     display: grid;
     height: 85px;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    padding: 0% 1%;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    padding: 0% 1%; 
     background-color: #9ca5db;
     box-shadow: 0 5px 15px #bbc1e5;
 }
@@ -41,44 +41,63 @@ html{
     height: 85%;
 }
 
-.btns_encabezado{
+.navbar_encabezado{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    width: 80%;
+    height: 50%;
 }
 
-.btn_header{
-    width: 90px;
-    height: 38px;
-    cursor: pointer;
-    background-color: white;
-    transition: background-color 0.7s ease;
+.nav_links li{
+    list-style-type: none;
 }
 
-.btn_header a{
+.nav_links a{
     text-decoration: none;
     transition: color 0.7s ease;
 }
 
-.btn_header a:link{
+.links{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    cursor: pointer;
+}
+
+.links a{
+    transition: background-color 0.7s ease;
+}
+
+.links a:link{
     color: #a3354eff;
 }
 
-.btn_header a:visited{
+.links a:visited{
     color: #a3354eff;
 }
 
-.btn_header a:hover, button:hover{
+.links a:hover{
+    padding: 5%;
     background-color: #f1efef;
     color: black;
     /* color: rgb(45, 58, 119); */
 }
-.btn_header a:active{
+.links a:active{
     color: rgb(255, 113, 146);
 }
 
-.buscador_encabezado{
+/* .buscador_encabezado{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +107,7 @@ html{
     width: 80%;
     height: 38px;
     border-radius: 15px;
-}
+} */
 
 .usuario_encabezado{
     display: flex;
@@ -133,6 +152,7 @@ html{
     background-color: #676378;
     box-shadow: 5px 0 15px #676378;
 }
+
 .p_footer{
     padding: 10px;
 }
