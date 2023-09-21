@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #02366d;
+    background: rgb(7,0,98);
+background: linear-gradient(90deg, rgba(7,0,98,1) 0%, rgba(6,6,190,1) 45%, rgba(11,168,249,1) 100%);
 }
 
 .cuerpo{
@@ -17,6 +18,23 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
 }
 
 .seccion {
@@ -36,22 +54,23 @@ body {
 }
 
 .imagen {
-    max-width: 100%;
-    height: auto;
+    width: 250px;
+    height: 200px;
     border: 2px solid #fff;
     border-radius: 10px;
 }
 
 #brayan {
-    background-color: rgb(243, 154, 71);
+    background: rgb(195,195,195);
+background: radial-gradient(circle, rgba(195,195,195,1) 0%, rgba(119,119,119,1) 50%, rgba(46,46,46,1) 100%);
 }
 
 
 .superpuesto {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 60%;
+    transform: translate(-10%, -50%);
     background-color: rgba(145, 143, 143, 0.7);
     padding: 10px;
     border-radius: 5px;
@@ -79,3 +98,10 @@ body {
     margin-bottom: 0;
 }
 
+.volver {
+    border: none;
+    border-radius: 10px;
+    background-color: #010d1a;
+    margin: 70px;
+    padding: 20px;
+}
