@@ -1,0 +1,190 @@
+.contenido{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0% 1%;
+}
+
+.contenido_perfil{
+    width: 98%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 0.7fr 1fr;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    padding: 2.5% 3.5%;
+    gap: 15px;
+}
+
+.perfil_usuario{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.perfil_usuario li{
+    list-style-type: none;
+}
+
+.icon_perfil{   
+    padding: 10px;
+}
+
+.icon_perfil img{
+    width: 100%;
+    height: 100%;
+}
+
+.datos_usuario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.datos_usuario ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.datos_usuario li{
+    gap: 5px;
+    width: auto;
+}
+
+.datos_usuario li h3{
+    font-size: 25px;
+}
+
+.datos_usuario span{
+    font-size: 20px;
+}
+
+.datos_interes{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+.nexos_interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    padding: 10px 10px;
+}
+
+.nexos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.nexo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 2.5rem;
+    border: 0.5px solid #31303a;
+    border-radius: 10px;
+    background-color: #676378c4;
+    transition: background-color 0.7s ease;
+}
+
+.nexos li{
+    list-style-type: none;
+}
+
+.nexo a, span{
+    font-size:large;    
+    text-decoration: none;
+    transition: color 0.9s ease;
+}
+
+.nexo a:link{
+    color: rgb(0, 0, 0);
+    /* color: #a3354eff; */
+}
+
+.nexo a:visited{
+    color: rgb(0, 0, 0);
+}
+
+.nexo:hover{
+    background-color: #8c87a0a8
+}
+.nexo a:hover, span:hover{
+    color: #a3354eff;
+}
+
+.nexo:active{
+    color: rgb(255, 113, 146);
+}
+
+.animacion{
+    position: relative;
+    display: grid;
+    height: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid #3f3e4b;
+}
+
+.imagen1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/5;
+    z-index: 2;
+    animation: moveImageX 7s linear infinite;
+}
+
+.imagen1 img{
+    height: 95%;
+}
+
+@keyframes moveImageX {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(70%);
+    }
+}
+
+.imagen2{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    z-index: 3;
+}
+
+.imagen2 img{
+    width: 80%;
+    height: 100%;
+}
+
+.imagen3{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+.imagen3 img{
+    width: 80%;
+    height: 100%;
+}
