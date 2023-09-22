@@ -3,139 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/header_footer.css">
-    <title>Home</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/css/home.css">
 </head>
-<style>
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .Section1 {
-        flex: 1;
-        padding: 20px;
-        background-color: #f0f0f0;
-        margin: 10px;
-    }
-
-    .imagen {
-        width: 200px;
-        height: auto;
-        margin-right: 20px;
-    }
-
-    .square-section {
-        flex: 1;
-        background-color: #f0f0f0;
-        padding: 20px;
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .square-section-inner {
-        background-color: #fff;
-        padding: 20px; 
-        border: 1px solid #ccc;
-        border-radius: 5px; 
-    }
-
-    .square-inputs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    input[type="text"],
-    button {
-        width: 100%;
-    }
-</style>
 <body>
-    <header class="encabezado">
-        <section class="logo_encabezado">
-            <span>User Select</span>
-            <!-- <img src="../img/login/example_logo.png"/> -->
+    <article class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </article>
+    <article class="barra-lateral">
+        <section>
+            <div class="nombre-pagina">
+                <ion-icon id="buffer" name="logo-buffer"></ion-icon>
+                <span>Talent Link</span>
+            </div>
+            <button class="boton">
+                <ion-icon name="log-in-outline"></ion-icon>
+                <span>Ingresar</span>
+            </button>
         </section>
-
-        <section class="navbar_encabezado">
-            <ul class="nav_links">
-                <li class="links">
-                    <a href="index.html" target="_self">Home</a>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="usuario" href="#">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <span>Usuarios</span>
+                    </a>
                 </li>
-                <li class="links">
-                    <a href="vacantes.html" target="_self">Empresas</a>
+                <li>
+                    <a href="#">
+                        <ion-icon name="business-outline"></ion-icon>
+                        <span>Empresas</span>
+                    </a>
                 </li>
-                <li class="links">
-                    <a href="#" target="_self">Vacantes</a>
+                <li>
+                    <a href="#">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Registros</span>
+                    </a>
                 </li>
-                <li class="links">
-                    <a href="about.html" target="_self">About Us</a>
+                <li>
+                    <a href="#">
+                        <ion-icon name="documents-outline"></ion-icon>
+                        <span>Contratos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="today-outline"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="server-outline"></ion-icon>
+                        <span>Bases de datos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        <span>Dudas o inquietudes</span>
+                    </a>
                 </li>
             </ul>
-        </section>
-
-        <section class="usuario_encabezado">
-            <picture class="icons_user_1">
-                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
-            </picture>
-            <picture class="icons_user_2">
-                <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
-            </picture>
-        </section>
-    </header>
-
-    <main>
-        <div class="container">
-            <section class="Section1">
-                <img class="imagen" src="Img/shape-if.png" alt="FotoPersona">
-                <p>Persona</p>
-            </section>
-
-            <section class="Section1">
-                <img class="imagen" src="Img/Innatos-Segundo-empresas-de-manufactura-SUBTITULO.png" alt="FotoEmpresa">
-                <p>Empresa</p>
-            </section>
-        </div>
-
-        <div class="square-section">
-            <div class="square-section-inner">
-                <h2>Seccion para Login</h2>
-                <div class="square-inputs">
-                    <button class="login-button">Login</button>
-                    <button class="signup-button">Sign up</button>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
+            <article class="usuario">
+                <img src="/img/logo__1_-removebg-preview.png" alt="">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">TALENT LINK</span>
+                        <span class="email">Talentlink@gmail.com</span>
+                    </div>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </div>
+            </article>
         </div>
+    </article>
+    <main>
+        <section class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar alguna empresa o usuario">
+            <button class="search-button">Buscar</button>
+        </section>
+        <section class="carousel">
+            <article class="carousel-container">
+                <article class="carousel-slide">
+                    <h2>Novedades</h2>
+                    <img src="/img/horizontal largo.jpg" alt="Novedades">
+                    <p>......</p>
+                </article>
+            </article>
+        </section>
+        <section class="text-section">
+            <h2>Talent link</h2>
+            <p>Este es un software dedicadp a....</p>
+            <p>........</p>
+        </section>
+        <section class="galeria">
+            <h1>Galeria de empresas</h1>
+            <article class="linea"></article>
+            <article class="contenedor-imagenes">
+                <article class="imagen">
+                    <img src="/img/argoslogo.png" alt="Argosimg">
+                    <article class="overlay">
+                        <h2>Argos</h2>
+                    </article>
+                </article>
+                <article class="imagen">
+                    <img src="/img/aviancalogo.jpg" alt="aviancaimg">
+                    <article class="overlay">
+                        <h2>Avianca</h2>
+                    </article>
+                </article>
+                <article class="imagen">
+                    <img src="" alt="Bancolombiaimg">
+                    <article class="overlay">
+                        <h2>Bancolombia</h2>
+                    </article>
+                </article>
+                <article class="imagen">
+                    <img src="/img/DaviviendaLogo.png" alt="Daviviendaimg">
+                    <article class="overlay">
+                        <h2>Davivienda</h2>
+                    </article>
+                </article>
+                <article class="imagen">
+                    <img src="/img/exitologo.png" alt=Exitoimg"">
+                    <article class="overlay">
+                        <h2>Exito</h2>
+                    </article>
+                </article>
+                <article class="imagen">
+                    <img src="/img/nutresalogo.png" alt="nutresaimg">
+                    <article class="overlay">
+                        <h2>Nutresa</h2>
+            </ar>
+        </article>
     </main>
-
-    <footer class="pie_pagina">
-        <section class="p_footer">
-            <p>aqui va un parrafo aqui va un parrafo
-                aqui va un parrafo aqui va un parrafo
-                aqui va un parrafo aqui va un parrafo
-                aqui va un parrafo
-            </p>
-        </section>
-        <section class="btns_footer">
-            <picture class="btn_footer">
-                <a href="" target=""><img src="../img/login/icon_facebook_circular.png" alt="facebook"/></a>
-            </picture>
-            <picture class="btn_footer">
-                <a href="" target=""><img src="../img/login/icon_whatsapp.png" alt="whatsapp"/></a>
-            </picture>
-            <picture class="btn_footer">
-                <a href="" target=""><img src="../img/login/icon_social.png" alt="social"/></a>
-            </picture>
-        </section>
-        <section class="add_footer">
-            <picture>
-                <a href="" target=""><img src="../img/login/icon_help.png" alt="ayuda"/></a>
-            </picture>
-        </section>
-    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script/script.js"></script>
 </body>
+</html>
