@@ -125,7 +125,7 @@
 .nexo:hover{
     background-color: #8c87a0a8
 }
-.nexo a:hover, span:hover{
+.nexo a:hover,.nexo span:hover{
     color: #a3354eff;
 }
 
@@ -200,7 +200,8 @@
     }
 
     .perfil_usuario{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0.9fr;
+        height: 400px;
     }
         
     .datos_interes{
@@ -210,6 +211,7 @@
         grid-template-rows: inherit;
         flex-direction: column;
         overflow: hidden;
+        object-fit: cover;
     }
 
     .nexos_interes{

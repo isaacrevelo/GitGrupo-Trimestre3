@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacantes Grupo Aval</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/detallevacante.css">
 </head>
@@ -14,30 +15,33 @@
             <!-- <img src="../img/login/example_logo.png"/> -->
         </section>
 
-        <section class="navbar_encabezado">
+        <input type="checkbox" id="check">
+            <label for="check" class="icons_nav">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+
+        <nav class="navbar_encabezado">
             <ul class="nav_links">
                 <li class="links">
                     <a href="index.html" target="_self">Home</a>
                 </li>
                 <li class="links">
-                    <a href="vacantes.html" target="_self">Empresas</a>
-                </li>
-                <li class="links">
-                    <a href="#" target="_self">Vacantes</a>
+                    <a href="vacantes.html" target="_self">Vacantes</a>
                 </li>
                 <li class="links">
                     <a href="about.html" target="_self">About Us</a>
                 </li>
             </ul>
-        </section>
+        </nav>
 
         <section class="usuario_encabezado">
             <picture class="icons_user_1">
-                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+                <a href="login.html"><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
             </picture>
             <picture class="icons_user_2">
                 <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
-            </picture>
+            </picture>           
         </section>
     </header>
 
