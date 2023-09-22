@@ -3,61 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/home.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/home.css">
     <title>Homepage</title>
 </head>
 <body>
-<header class="encabezado">
-    <section class="logo_encabezado">
-        <span>User Select</span>
-    </section>
-
-    <section class="navbar_encabezado">
-        <ul class="nav_links">
-            <li class="links">
-                <a href="index.html" target="_self">Home</a>
-            </li>
-            <li class="links">
-                <a href="vacantes.html" target="_self">Empresas</a>
-            </li>
-            <li class="links">
-                <a href="#" target="_self">Vacantes</a>
-            </li>
-            <li class="links">
-                <a href="about.html" target="_self">About Us</a>
-            </li>
-        </ul>
-    </section>
-
-    <section class="usuario_encabezado">
-        <picture class="icons_user_1">
-            <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
-        </picture>
-        <picture class="icons_user_2">
-            <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
-        </picture>
-    </section>
-</header>
-<main>
-    <div class="container">
-        <section class="Section1">
-            <img class="imagen" src="/img/shape-if.png" alt="FotoPersona">
-            <p>Persona</p>
+    <header class="encabezado">
+        <section class="logo_encabezado">
+            <span>User Select</span>
+            <!-- <img src="../img/login/example_logo.png"/> -->
         </section>
-        <section class="Section1">
-            <img class="imagen" src="/img/Innatos-Segundo-empresas-de-manufactura-SUBTITULO.png" alt="FotoEmpresa">
-            <p>Empresa</p>
+
+        <input type="checkbox" id="check">
+            <label for="check" class="icons_nav">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+
+        <nav class="navbar_encabezado">
+            <ul class="nav_links">
+                <li class="links">
+                    <a href="index.html" target="_self">Home</a>
+                </li>
+                <li class="links">
+                    <a href="vacantes.html" target="_self">Vacantes</a>
+                </li>
+                <li class="links">
+                    <a href="about.html" target="_self">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="usuario_encabezado">
+            <picture class="icons_user_1">
+                <a href="login.html"><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+            </picture>
+            <picture class="icons_user_2">
+                <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
+            </picture>           
         </section>
-    </div>
-    <div class="square-section">
-        <div class="square-section-inner">
-            <h2>Seccion para Login</h2>
-            <div class="square-inputs">
-                <button>Login</button>
-                <button>Sign up</button>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="Section1">
+                <img class="imagen" src="/img/shape-if.png" alt="FotoPersona">
+                <p>Persona</p>
+            </section>
+            <section class="Section1">
+                <img class="imagen" src="/img/Innatos-Segundo-empresas-de-manufactura-SUBTITULO.png" alt="FotoEmpresa">
+                <p>Empresa</p>
+            </section>
+        </div>
+        <div class="square-section">
+            <div class="square-section-inner">
+                <h2>Seccion para Login</h2>
+                <div class="square-inputs">
+                    <button>Login</button>
+                    <button>Sign up</button>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
+
+    <footer class="pie_pagina">
+        <section class="p_footer">
+            <h3>¡Hola mundo!</h3>
+            <span>AplicacionWeb de Proyecto</span>
+            <p>Bienvenido a UserSelect. Esta interfaz grafica diseñada. Para usarla o no usarla, ¡con proposito practico!
+                ©2023 Nuestro Sitio Web. Todos los derechos reservados. 2023
+            </p>
+        </section>
+        <section class="btns_footer">
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_facebook_circular.png" alt="facebook"/></a>
+            </picture>
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_whatsapp.png" alt="whatsapp"/></a>
+            </picture>
+            <picture class="btn_footer">
+                <a href="" target=""><img src="../img/login/icon_social.png" alt="social"/></a>
+            </picture>
+        </section>
+        <section class="add_footer">
+            <picture>
+                <a href="" target=""><img src="../img/login/icon_help.png" alt="ayuda"/></a>
+            </picture>
+        </section>
+    </footer>
 </body>
 </html>
