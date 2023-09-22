@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Perfil Usuario</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/perfil.css">
 </head>
 <body>
     <header class="encabezado">
@@ -24,7 +24,7 @@
         <nav class="navbar_encabezado">
             <ul class="nav_links">
                 <li class="links">
-                    <a href="index.html" target="_self">Home</a>
+                    <a href="../index.html" target="_self">Home</a>
                 </li>
                 <li class="links">
                     <a href="https://www.youtube.com/" target="_self">Empresas</a>
@@ -33,14 +33,14 @@
                     <a href="#" target="_self">Vacantes</a>
                 </li>
                 <li class="links">
-                    <a href="about.html" target="_self">About Us</a>
+                    <a href="#" target="_self">About Us</a>
                 </li>
             </ul>
         </nav>
 
         <section class="usuario_encabezado">
             <picture class="icons_user_1">
-                <a href="login.html"><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
+                <a><img src="../img/login/icon_setting.png" alt="icono ajustes"/></a>
             </picture>
             <picture class="icons_user_2">
                 <a><img src="../img/login/icon_user.png" alt="icono usuario"/></a>
@@ -49,34 +49,46 @@
     </header>       
 
     <main class="contenido">
-        <section class="container_login">
-            <article class="img_login">
-                <img src="../img/login/select_candidates_illustrations.jpg"/>
+        <section class="contenido_perfil">
+            <article class="perfil_usuario">
+                <picture class="icon_perfil">
+                    <img src="../img/perfil/icon_perfil_woman.png" alt="imagen representativa perfil">
+                </picture>
+                <ul class="datos_usuario">
+                    <li><h3>Lucy Saens</h3></li>
+                    <li>
+                        <ul>
+                            <li><span>C.C</span></li>
+                            <li><span>1018301219</span></li>
+                        </ul>
+                    </li>
+                    <li><span>Ingenieria De Sistemas</span></li>
+                </ul>
             </article>
-            <article class="iniciar_sesion">
-                <h2 class="name">Login</h2>
-                <form class="form_login">
-                    <label for="dni">
-                        <span>Documento</span>
-                        <input id="dni" type="text" name="dni" placeholder=" ..numero documento.. "/>
-                    </label>
-                    <label for="password">
-                        <span>Contraseña</span>
-                        <input id="password" type="password" name="password" placeholder=" ..contraseña usuario.. "/>
-                    </label>
-                    <button type="submit" class="btn_login">
-                        <a href="perfil.html" target="_self">Entrar</a>
-                    </button>
-                </form>
-                <div class="separator">
-                    <hr>
-                    <span> ..o.. </span>
-                    <hr>
+            <article class="datos_interes">
+                <div class="nexos_interes">
+                        <ul class="nexos">
+                            <li class="nexo nexo1">
+                                <a href="curriculum.html" target="_self">Actualizar Hoja De Vida</a>
+                            </li>
+                            <li class="nexo nexo2">
+                                <span>Ver Vacantes Aplicadas</span>              
+                            </li>
+                            <li class="nexo nexo3">
+                                <span>Otro</span>
+                            </li>
+                        </ul>
                 </div>
-                <div class="registrarse">
-                    <button type="submit" class="btn_register">
-                        <a href="" target="_self">Registrarse</a>
-                    </button>
+                <div class="animacion">
+                    <picture class="imagen1 imagen_animacion1">
+                        <img src="../img/perfil/loop_walk_mario.gif" alt="imagen relleno">
+                    </picture>
+                    <picture class="imagen2 imagen_animacion2">
+                        <img src="../img/perfil/tuberia_lado_izquierdo.png" alt="imagen relleno">
+                    </picture>
+                    <picture class="imagen3 imagen_animacion2">
+                        <img src="../img/perfil/tuberia_lado_derecho.png" alt="imagen relleno">
+                    </picture>
                 </div>
             </article>
         </section>

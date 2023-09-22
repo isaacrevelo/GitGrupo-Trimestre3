@@ -4,99 +4,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1050px;
+    height: auto;
     padding: 1% 1%;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: 90%;
-    gap: 1%;
-}
-
-/*  */
-.tab_curriculum {
-    display: flex;
-    align-items:flex-end;   
-    width: 470px;
-    height: 40px;
-    background-color: white;
-    border: 1px solid grey;
-    border-radius: 7px 90px 0 0;
-    padding: 0 5px;
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
-}   
-
-
-.btn_tab{
-    transition: all 0.6s ease;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #212121;
-    transform: skew(20deg, 0deg);
-    color: #000000;
-    cursor: pointer;
-    background-color: white;
-}
-
-.btn_tab_1{
-    border-radius: 7px 0 0 0;
-}
-
-.btn_tab_4{
-    border-radius: 0 0 7px 0;
-}
-
-.btn_tab::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #c9c9c9;
-    z-index: -1;    
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-.btn_tab:hover::after{
-    opacity: 1;
-}
-
-/*  */
-.container_general{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    overflow: hidden;
-}
-
-.container_general span{
-    font-size: 20.5px;
-    font-weight: 600;
-}
-
-.content{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(184, 184, 184, 0.5);
-}   
-    
-#contenido1{
-    transform: translateX(0%);
-}
-
-#contenido2 #contenido3 #contenido4{
-    transform: translateX(100%);
+    padding: 35px 0;
 }
 
 .contenido input{
@@ -137,6 +47,113 @@
     padding: 10px 14px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    gap: 15px;
+}
+
+/*  */
+.tab_curriculum {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 55px;
+    background-color: white;
+    border-radius: 7px 90px 0 0;
+    padding: 1px 15px;
+    box-shadow: inset 0 0 10px rgba(184, 184, 184, 0.5);
+}   
+
+.btn_tab{
+    transition: all 0.6s ease;
+    width: 20%;
+    height: 85%;
+    padding: 2px 2px;
+    background-color: transparent;
+    transform: skew(20deg, 0deg);
+    color: #000000;
+    cursor: pointer;
+    background-color: white;
+    border-left-color: rgb(162, 162, 162);
+    border-right-color: rgb(162, 162, 162);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.btn_tab_1{
+    border-left: none;
+    border-radius: 7px 0 0 0;
+}
+
+.btn_tab_2{
+    border-left: none;
+    border-right: none;
+}
+
+.btn_tab_3{
+    border-right: none;
+}
+
+.btn_tab_4{
+    border-right: none;
+    border-radius: 0 0 7px 0;
+}
+
+.btn_tab::after{
+    content: "";
+    position: absolute;
+    width: 100%;    
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #c9c9c9;
+    z-index: -1;    
+    opacity: 0;
+    transition: all 0.4s ease;
+    border: none;
+}
+
+.btn_tab:hover::after{
+    opacity: 1;
+}
+
+/*  */
+.container_general{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 1050px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container_general span{
+    font-size: 20.5px;
+    font-weight: 600;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(184, 184, 184, 0.5);
+}   
+    
+#contenido1{
+    transform: translateX(0%);
+}
+
+#contenido2 #contenido3 #contenido4{
+    transform: translateX(100%);
+}
+
+/*  */
 .content_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,32 +200,91 @@
     height: 100%;
 }
 
+/*  */
 .content_2{
     display: flex;
     align-items: flex-start;
-    width: 100%;
 }
 
 .form3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     padding: 3% 4%;
-    gap: 80px;
+    gap: 50px;
 }
 
-.form3 label{
+.form3 div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.form3_content hr, span, select{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.labels2{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 78%;
-    height: 8%;
+    padding: 5px;
 }
 
-.form3 input[type="file"]{
-    width: 70%;
+.labels2_0{
+    display: flex;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
 }
+
+.label_unico{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.label_unico input[type=file]{
+    width: 95%;
+    height: 100%;
+}
+
+.labels2_0 hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.labels2_1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.labels2_1 select{
+    width: 95%;
+    height: 100%;
+}
+
+.labels2_2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.labels2_2 input[type=file]{
+    width: 75%;
+    height: 100%;
+}
+
+.select_unico{
+    width: 20%;
+}
+
+/*  */
 .content_3{
     display: flex;
     flex-direction: column;
@@ -226,7 +302,7 @@
 }
 
 .content_3 article select{
-    width: 15%;
+    width: 25%;
 }
 
 .content_3 article hr {
@@ -239,6 +315,7 @@
     height: 30%;
     grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr;
+    gap: 15px;
 }
 
 .form4 label{
@@ -257,6 +334,7 @@
     height: 85%;
 }
 
+/*  */
 .content_4{
     display: flex;
     justify-content: flex-start;
@@ -274,7 +352,7 @@
 .form5 label{
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 5px;
 }
 
 .form5 select{
@@ -283,4 +361,128 @@
 
 .form5 input[type="file"]{
     width: 75%;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .tab_curriculum{
+        width: 100%;
+        padding: 1px 10px;
+    }
+
+    .btn_tab{
+        width: 22%;
+        height: 90%;
+    }
+
+    .container_general span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .container_general{
+        height: 1700px;
+    }
+
+    /*  */
+    .content_1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form1{
+        grid-row: none;
+        grid-column: none;
+        height: 900px;
+    }
+
+    .form2{
+        grid-row: none;
+        grid-column: none;
+        height: 780px;
+    }
+
+    .formulario{
+        justify-content: space-around;
+    }
+
+    .formulario label{
+        gap: 2px;
+        height: 9%; 
+    }
+    
+    .labels input, select{
+        width: 100%;
+    }
+    
+    .label_select  div select{
+        width: 100%;
+    }
+
+    /*  */
+    .form3 div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .labels2_1 select{
+        width: 100%;
+    }
+    
+    .labels2_2{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+
+    /*  */
+    .form3{
+        width: 100%;
+    }
+
+    .form3 input[type="file"]{
+        width: 100%;
+    }
+
+    .content_3 article{
+        width: 100%;
+    }
+
+    .content_3 article select{
+        width: 35%;
+        height: 40%;
+    }
+
+    /*  */
+
+    .form4{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form4 label{
+        padding: 0;
+        gap: 10px;
+    }
+
+    .form5{
+        width: 100%;
+    }
+
+    .form5 select{
+        width: 100%;
+    }
+
+    .form5 input[type="file"]{
+        width: 100%;
+    }
+} 
+
+@media (min-width: 1300px) {
+  
 }
